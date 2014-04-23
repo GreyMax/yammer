@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import org.tbee.javafx.scene.layout.fxml.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<MigPane id="rootPane" fx:controller="com.greymax.yammer.AuthController"
+         styleClass="main-panel"
+         layout="insets 20, aligny 30%"
+         cols="[grow, 200::]"
+         rows=""
+         xmlns:fx="http://javafx.com/fxml">
+
+  <ImageView MigPane.cc="wrap 30, alignx center">
+    <Image url="/images/yammer.png" />
+  </ImageView>
+  <Label text="Email:" MigPane.cc="wrap" />
+  <TextField fx:id="emailField" prefColumnCount="30" MigPane.cc="growx, wrap"/>
+  <Label text="Password:" MigPane.cc="wrap" />
+  <PasswordField fx:id="passwordField" prefColumnCount="30" MigPane.cc="growx, wrap"/>
+
+  <Button text="Sign In" onAction="#login" MigPane.cc="gap :push, gaptop 15, wrap"/>
+
+</MigPane>
